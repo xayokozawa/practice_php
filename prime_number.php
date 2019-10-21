@@ -4,7 +4,7 @@
 
 function primeNumberJudgment(int $number = 0)
 {
-
+    try {
     if($number <= 1 ) return false;
     if($number === 2) return true;
     
@@ -15,4 +15,8 @@ function primeNumberJudgment(int $number = 0)
     }
 
     return true;   
+
+    } catch (Exception $e) {
+        echo '捕捉した例外: ',$e->getMessage(), "¥n" ;
+    }
 }
