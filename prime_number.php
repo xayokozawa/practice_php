@@ -20,3 +20,5 @@ function primeNumberJudgment(int $number = 0)
         echo '捕捉した例外: ',$e->getMessage(), "¥n" ;
     }
 }
+
+//phpだけが書かれたファイルは、終了タグを省略する
